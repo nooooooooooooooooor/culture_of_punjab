@@ -34,11 +34,11 @@
           <!-- Vernacular Architecture -->
           <div class="col-md-4">
               <div class="card">
-                  <img src="i2.jpg" class="card-img-top" alt="Vernacular Architecture">
+                  <img src="img/architecture_of_punjab/i2.jpg" class="card-img-top" alt="Vernacular Architecture">
                   <div class="card-body">
                       <h5 class="card-title">Vernacular Architecture</h5>
                       <p class="card-text">Traditional rural structures made using local materials like mud, wood, and thatch.</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
+                      <a href="#" class="btn">Learn More</a>
                   </div>
               </div>
           </div>
@@ -46,11 +46,11 @@
           <!-- Sikh Architecture -->
           <div class="col-md-4">
               <div class="card">
-                  <img src="i3.jpg" class="card-img-top" alt="Sikh Architecture">
+                  <img src="img/architecture_of_punjab/i3.jpg" class="card-img-top" alt="Sikh Architecture">
                   <div class="card-body">
                       <h5 class="card-title">Sikh Architecture</h5>
                       <p class="card-text">Distinguished by domes, chhatris, and intricate frescoes, seen in gurudwaras.</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
+                      <a href="#" class="btn">Learn More</a>
                   </div>
               </div>
           </div>
@@ -58,11 +58,11 @@
           <!-- Indo-Islamic Architecture -->
           <div class="col-md-4">
               <div class="card">
-                  <img src="i4.jpg" class="card-img-top" alt="Indo-Islamic Architecture">
+                  <img src="img/architecture_of_punjab/i4.jpg" class="card-img-top" alt="Indo-Islamic Architecture">
                   <div class="card-body">
                       <h5 class="card-title">Indo-Islamic Architecture</h5>
                       <p class="card-text">Features domes, minarets, and geometric designs influenced by Mughal architecture.</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
+                      <a href="#" class="btn">Learn More</a>
                   </div>
               </div>
           </div>
@@ -71,8 +71,12 @@
 <div id="footer"></div>
 <script>
     //load header
-    fetch('../header.html')
+    fetch('header.html')
     .then(response => response.text()).then(data => document.getElementById("header").innerHTML = data);
+
+    //load footeer
+    fetch('footer.html')
+    .then(response => response.text()).then(data => document.getElementById("footer").innerHTML = data);
 
 </script>
 
