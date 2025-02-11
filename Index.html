@@ -302,9 +302,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="text-center mt-4">
-      <a class="btn btn-lg button mt-3" id="button" href="#">View More <i class="fa-solid fa-angle-right"></i></a>
-    </div>
   </div>
 
   <!-- Footer -->
@@ -320,32 +317,6 @@
     fetch("footer.html")
       .then(response => response.text())
       .then(data => document.getElementById("footer").innerHTML = data);
-
-
-
-    // document.addEventListener("DOMContentLoaded", function () {
-    //   // Get the current page URL
-    //   let currentPage = window.location.pathname.split("/").pop();
-
-    //   // If no page is specified, default to index.html
-    //   if (currentPage === "" || currentPage === "index.html") {
-    //     currentPage = "index.html";
-    //   }
-
-    //   // Select all nav links
-    //   let navLinks = document.querySelectorAll("#navMenu .nav-link");
-
-    //   navLinks.forEach(link => {
-    //     if (link.getAttribute("href") === currentPage) {
-    //       link.classList.add("active");  // Add 'active' class to the matching link
-    //     } else {
-    //       link.classList.remove("active"); // Remove 'active' from others
-    //     }
-    //   });
-    // });
-
-
-
 
   </script>
   <!--JavaScript Link-->
