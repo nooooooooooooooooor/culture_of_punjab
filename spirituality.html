@@ -21,18 +21,18 @@
     </style>
 </head>
 <body>
-
+ <div id="header"></div>
     <header>
-
+   
         <div class="container">
             <h1 class="text-center my-5">The Spirituality of Punjab</h1>
             <p class="lead text-center">A Journey Through Faith and Culture</p>
             <div class="dropdown al" >
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
                   Language
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item active" href="index.html">English</a></li>
+                  <li><a class="dropdown-item active" href="spirituality.html">English</a></li>
                   <li><a class="dropdown-item" href="index_punjabi.html">ਪੰਜਾਬੀ</a></li>
                 </ul>
               </div>
@@ -58,13 +58,13 @@
                 </ul>
             </div>
             <div class="col-md-6">
-                <img src="images/image.png" alt="Spirituality of Punjab" class="img-fluid rounded"> 
+                <img src="img/spirituality_of_punjab/image.png" alt="Spirituality of Punjab" class="img-fluid rounded"> 
             </div>
         </div>
         <hr>
         <div id="ancient_spirituality" class="row mt-5">
             <div class="col-md-4">
-                <img src="images/ancient spirituality.jpg" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/ancient spirituality.jpg" class="img-fluid rounded">
             </div>
             <div class="col-md-8">
                 <h2>Ancient Spirituality (Before 1st Century CE)</h2>
@@ -78,13 +78,13 @@
                 <p>During the Vedic period, Punjab, part of the larger region of ancient Aryavarta, was influenced by early Hindu religious practices. The sacred texts of the Vedas were composed during this time, and the region’s spiritual practices involved yajnas (fire sacrifices), offerings to deities, and chanting hymns.</p>
             </div>
             <div class="col-md-4">
-                <img src="images/vedic.jpg" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/vedic.jpg" class="img-fluid rounded">
             </div>
         </div>
         <hr>
         <div id="Buddhism" class="row mt-5">
             <div class="col-md-4">
-                <img src="images/Buddhism and Jainism.png" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/Buddhism and Jainism.png" class="img-fluid rounded">
             </div>
             <div class="col-md-8">
                 <h2>The Rise of Buddhism and Jainism (6th Century CE)</h2>
@@ -99,13 +99,13 @@
 
                 </div>
             <div class="col-md-4">
-                <img src="images/Sufi.png" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/Sufi.png" class="img-fluid rounded">
             </div>
         </div>
         <hr>
         <div id="Sikhism" class="row mt-5">
             <div class="col-md-4">
-                <img src="images/Sikhism.jpg" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/Sikhism.jpg" class="img-fluid rounded">
             </div>
             <div class="col-md-8">
                 <h2>The Rise of Sikhism (15th Century CE)</h2>
@@ -133,13 +133,13 @@
                 <p>1849: British annexation of Punjab. This marked the start of major changes in the region's spiritual practices, with Christian missionaries active in conversion efforts.British colonial rule (after 1849) brought challenges to the spiritual traditions of Punjab. The introduction of Western education and Christian missionary activities led to a reassertion of Sikh identity and spirituality, often in the face of perceived threats to Punjabi culture and beliefs.</p>
             </div>
             <div class="col-md-4">
-                <img src="images/british-transformed.jpeg" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/british-transformed.jpeg" class="img-fluid rounded">
             </div>
         </div>
         <hr>
         <div id="Singh_Sabha" class="row mt-5">
             <div class="col-md-4">
-                <img src="images/Gurudwara Reform Movement.jpeg" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/Gurudwara Reform Movement.jpeg" class="img-fluid rounded">
             </div>
             <div class="col-md-8">
                 <h2>The Singh Sabha Movement (Late 19th Century CE)</h2>
@@ -161,13 +161,23 @@
                 
             </div>
             <div class="col-md-4">
-                <img src="images/local.webp" class="img-fluid rounded">
+                <img src="img/spirituality_of_punjab/local.webp" class="img-fluid rounded">
             </div>
         </div>
         
 
     </main>
+    <div id="footer"></div>
+    <script>
+            fetch("header.html")
+      .then(response => response.text()) // convert response into text
+      .then(data => document.getElementById("header").innerHTML = data); //insert data
 
+    //load Footer
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
     
 </body>
 </html>
