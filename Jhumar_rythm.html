@@ -6,8 +6,153 @@
     <title>Jhumar Dance</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+    body {
+      font-size: 17px;
+      font-family: "Roboto", serif;
+      font-weight: 400;
+    }
+
+    .lk {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .header {
+      word-spacing: 5px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .wrapper {
+      background-color: #FFC107;
+      color: #000000;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .nav-link {
+      color: #000000 !important;
+      
+
+    }
+
+    .nav-link:hover {
+      color: #FFC107 !important;
+    }
+
+    .navbar.nav-link:active {
+      color: #FFC107 !important;
+      border-bottom: #FFC107 !important;
+    }
+
+    .dropdown-menu {
+      display: none;
+      /* Bootstrap handles display automatically */
+      border: none !important;
+      width: 260px !important;
+      font-size: 18px;
+      border-radius: 0px !important;
+    }
+
+    .dropdown-menu:hover {
+      color: #FFC107;
+      border-bottom: 1px solid #FFC107;
+
+    }
+
+    .dropdown-menu:active {
+      color: #FFC107 !important;
+      border-bottom: 1px solid #FFC107 !important;
+    }
+
+    .dropdown-item {
+      font-size: 17px;
+      color: black !important;
+      line-height: 1.8 !important;
+    }
+
+    .dropdown-item:hover {
+      color: #FFC107 !important;
+      background-color: white !important;
+    }
+    h5 {
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .btn {
+      background-color: white;
+      color: #FFC107;
+      text-shadow: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #FFC107;
+      color: white;
+    }
+    #lnk:hover{
+      color: white !important;
+    }
+  </style>
+</head>
+
 <body>
-    <div id="header"></div>
+  <!-- header part here -->
+  <!--Top Menu-->
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <span><a href="#" class="lk"><i class="fa-solid fa-phone"></i> +91-2XXXXXXXXX</a></span>
+        </div>
+        <div class="col-6 text-end">
+          <span><a href="" class="lk"><i class="fa-solid fa-envelope"></i> info@culture.com</a></span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--Main Menu-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" style="width:180px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+          <li class="nav-item header">
+            <a class="nav-link active" aria-current="page" class="active" href="index.html">Home</a>
+          </li> 
+             
+              <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="rythm of punjab.html" target="_blank"
+                  class="nav-item header">Culture of Punjab (Rhythm, </a></li>
+              <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="music.html" target="_blank"
+                  class="nav-item header">Music,
+              <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="architecture.html" target="_blank"
+                  class="nav-item header">Architecture,
+              <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="philosophy.html" target="_blank"
+                  class="nav-item header">Philosophy,
+              <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="History.html" target="_blank"
+                  class="nav-item header">History,
+              <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="spirituality.html" target="_blank"
+                  class="nav-item header">Spirituality,</a></li>
+              <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="#" target="_blank">Tradition)</a></li>
+        <li class="nav-item header">
+          <a class="nav-link"  href="Contact.html">Contact Us</a>
+        </li>  
+      </ul>
+        
+      </div>
+    </div>
+    
+  </nav>
     <div class="container mt-5" style="background-color: #fae9b6;">
         <h1 class="text-info"><u>Jhumar</u></h1><br>
         <h2>Description:</h2>
@@ -19,18 +164,63 @@
         <h2>Costume:</h2>
         <p>Dancers typically wear traditional Punjabi attire, which may include a kurta and pajama for men, and a salwar kameez for women. The costumes are often adorned with minimalistic accessories to maintain the dance's understated elegance.</p>
     </div>
-    <div id="footer"></div>
-    <script>
-        //load Header
-        fetch("header.html")
-        .then(response => response.text()) // convert response into text
-        .then(data => document.getElementById("header").innerHTML = data); //insert data
-      
-        //load Footer
-        fetch("footer.html")
-          .then(response => response.text())
-          .then(data => document.getElementById("footer").innerHTML = data);
+        <!--Footer Section-->
+  <div class="container-fuid" style="background-color: #FFC107; margin-top: 25px;">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 style="font-size: 21px;">About Punjab </h5>
+              <p class="text-white">Punjab, the land of five rivers, is a vibrant blend of traditions, history, and
+                hospitality. Known for its iconic Golden Temple, it symbolizes peace and spirituality.  </p>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 style="font-size: 21px;">Cultural Highlights</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="rythm of punjab.html" target="_blank" class="nav-link p-0 text-white" id="lnk">Rhythm of Punjab</a></li>
+              <li class="nav-item mb-2"><a href="music.html" target="_blank" class="nav-link p-0 text-white" id="lnk">Music </a></li>
+              <li class="nav-item mb-2"><a href="architecture.html" target="_blank" class="nav-link p-0 text-white" id="lnk">Architecture</a></li>
+              <li class="nav-item mb-2"><a href="spirituality.html" target="_blank" class="nav-link p-0 text-white" id="lnk">Spirituality</a></li>
+              <li class="nav-item mb-2"><a href="History.html" target="_blank" class="nav-link p-0 text-white" id="lnk">History</a></li>
+            </ul>
+          </div>
     
-    </script>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 style="font-size: 21px;">Support & Helpline</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><i class="fa-solid fa-phone"> </i>
+                  +91-2XXXXXXXXX                </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><i class="fa-solid fa-envelope">
+                  </i>
+                  info@culture.com</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><i class="fa-solid fa-location-dot"> </i> 302 Heritage Plaza, Gill Road Extension Ludhiana, Punjab - 141012 India</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-5 mb-3">
+            <form>
+              <h5 style="font-size: 21px;">Stay Updated on Punjab’s Rich Culture</h5>
+              <p class="text-white">Subscribe for festival updates, traditions & cultural insights.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row  justify-content-md-between justify-content-sm-center pt-4 mt-4 border-top">
+          <p class="text-white">© 2025 Culture of Punjab. All Rights Reserved</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></li>
+            <li class="ms-3"><i class="fa-brands fa-square-instagram fa-xl" style="color: #ffffff;"></i></li>
+            <li class="ms-3"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div> 
+    
 </body>
 </html>
