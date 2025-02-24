@@ -7,14 +7,44 @@
   <title>Culture of Punjab</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
-    body {
-      font-size: 17px;
-      font-family: "Roboto", serif;
-      font-weight: 400;
+
+    .lk {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .header {
+      word-spacing: 5px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .wrapper {
+      background-color: #FFC107;
+      color: #000000;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      width: 100%;
+    }
+
+    .nav-link {
+      color: #000000 !important;
+
+
+    }
+
+    .nav-link:hover {
+      color: #FFC107 !important;
+    }
+
+    .navbar.nav-link:active {
+      color: #FFC107 !important;
+      border-bottom: #FFC107 !important;
     }
 
     .responsive-image {
@@ -66,12 +96,73 @@
       font-weight: 600;
       font-size: 18px;
     }
+
+    #lnk:hover {
+      color: white !important;
+    }
+
+    #lnk {
+      color: white !important;
+    }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <div id="header"></div>
+  <!-- header part here -->
+  <!--Top Menu-->
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <span><a href="#" class="lk"><i class="fa-solid fa-phone"></i> +91-2XXXXXXXXX</a></span>
+        </div>
+        <div class="col-6 text-end">
+          <span><a href="" class="lk"><i class="fa-solid fa-envelope"></i> info@culture.com</a></span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--Main Menu-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" style="width:180px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+          <li class="nav-item header">
+            <a class="nav-link active" aria-current="page" class="active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item header"><a class="nav-link" aria-disabled="true"
+              href="rythm_of_punjab/rythm of punjab.html" target="_blank" class="nav-item header">Culture of Punjab
+              (Rhythm, </a></li>
+          <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="music_of_punjab/music.html"
+              target="_blank" class="nav-item header">Music,</a></li>
+          <li class="nav-item header"><a class="nav-link" aria-disabled="true"
+              href="architecture_of_punjab/architecture.html" target="_blank" class="nav-item header">Architecture,</a></li>
+          <li class="nav-item header"><a class="nav-link" aria-disabled="true"
+              href="philosophy_of_punjab/philosophy.html" target="_blank" class="nav-item header">Philosophy,
+          <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="history_of_punjab/History.html"
+              target="_blank" class="nav-item header">History,</a></li>
+          <li class="nav-item header"><a class="nav-link" aria-disabled="true"
+              href="spirituality_of_punjab/spirituality.html" target="_blank" class="nav-item header">Spirituality,</a>
+          </li>
+          <li class="nav-item header"><a class="nav-link" aria-disabled="true" href="#" target="_blank">Tradition)</a>
+          </li>
+          <li class="nav-item header">
+            <a class="nav-link" href="Contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
 
 
   <!-- This is Hero Section-->
@@ -87,7 +178,7 @@
               <h1>Experience the Divine Essence of Punjab</h1>
               <p>Immerse yourself in the spiritual and cultural magnificence of Punjab, where faith, history, and
                 tradition come together in harmony.</p>
-              <p><a class="btn btn-lg " href="#">Explore Now</a></p>
+              <p><a class="btn btn-lg " href="History.html">Explore Now</a></p>
             </div>
           </div>
         </div>
@@ -100,7 +191,7 @@
               <h1>Feel the Rhythm, Live the Celebration!</h1>
               <p>Experience the energy and spirit of Punjab through its vibrant dance and music. Join the celebration of
                 culture and joy!</p>
-              <p><a class="btn btn-lg" href="#">Discover the Beats</a></p>
+              <p><a class="btn btn-lg" href="music.html">Discover the Beats</a></p>
             </div>
           </div>
         </div>
@@ -114,7 +205,7 @@
               <h1>Punjab: A Land of Colors, Culture, and Celebration</h1>
               <p>From soulful traditions to energetic festivals, explore the heart of Punjab’s rich heritage and
                 timeless beauty.</p>
-              <p><a class="btn btn-lg" href="#">Start Your Journey</a></p>
+              <p><a class="btn btn-lg" href="philosophy.html">Start Your Journey</a></p>
             </div>
           </div>
         </div>
@@ -142,7 +233,7 @@
             open arms and endless stories of its glorious past.</p>
         </blockquote>
       </div>
-      <div class="col-md-5 ">
+      <div class="col-md-5 mt-5">
         <img src="img/collage.jpeg" alt="" class="w-100 h-60 px-3">
       </div>
     </div>
@@ -303,24 +394,78 @@
   </div>
 
   <!-- Footer -->
-  <div id="footer"></div>
+  <!--Footer Section-->
+  <div class="container-fuid" style="background-color: #FFC107; margin-top: 25px;">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 style="font-size: 21px;">About Punjab </h5>
+            <p class="text-white">Punjab, the land of five rivers, is a vibrant blend of traditions, history, and
+              hospitality. Known for its iconic Golden Temple, it symbolizes peace and spirituality. </p>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 style="font-size: 21px;">Cultural Highlights</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="rythm_of_punjab/rythm of punjab.html" target="_blank"
+                  class="nav-link p-0 text-white" id="lnk">Rhythm of Punjab</a></li>
+              <li class="nav-item mb-2"><a href="music_of_punjab/music.html" target="_blank"
+                  class="nav-link p-0 text-white" id="lnk">Music </a></li>
+              <li class="nav-item mb-2"><a href="architecture_of_punjab/architecture.html" target="_blank"
+                  class="nav-link p-0 text-white" id="lnk">Architecture</a></li>
+              <li class="nav-item mb-2"><a href="spirituality_of_punjab/spirituality.html" target="_blank"
+                  class="nav-link p-0 text-white" id="lnk">Spirituality</a></li>
+              <li class="nav-item mb-2"><a href="history_of_punjab/History.html" target="_blank"
+                  class="nav-link p-0 text-white" id="lnk">History</a></li>
+            </ul>
+          </div>
 
-  <script>
-    //load Header
-    fetch("header.html")
-      .then(response => response.text()) // convert response into text
-      .then(data => document.getElementById("header").innerHTML = data); //insert data
+          <div class="col-6 col-lg-2 mb-3">
+            <h5 style="font-size: 21px;">Support & Helpline</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white" id="lnk"><i
+                    class="fa-solid fa-phone"> </i>
+                  +91-2XXXXXXXXX </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white" id="lnk"><i
+                    class="fa-solid fa-envelope">
+                  </i>
+                  info@culture.com</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white" id="lnk"><i
+                    class="fa-solid fa-location-dot"> </i> 302 Heritage Plaza, Gill Road Extension Ludhiana, Punjab -
+                  141012 India</a></li>
+            </ul>
+          </div>
 
-    //load Footer
-    fetch("footer.html")
-      .then(response => response.text())
-      .then(data => document.getElementById("footer").innerHTML = data);
+          <div class="col-lg-5 mb-3">
+            <form>
+              <h5 style="font-size: 21px;">Stay Updated on Punjab’s Rich Culture</h5>
+              <p class="text-white">Subscribe for festival updates, traditions & cultural insights.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
 
-  </script>
+        <div
+          class="d-flex flex-column flex-sm-row  justify-content-md-between justify-content-sm-center pt-4 mt-4 border-top">
+          <p class="text-white">© 2025 Culture of Punjab. All Rights Reserved</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></li>
+            <li class="ms-3"><i class="fa-brands fa-square-instagram fa-xl" style="color: #ffffff;"></i></li>
+            <li class="ms-3"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
   <!--JavaScript Link-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
 
 </body>
